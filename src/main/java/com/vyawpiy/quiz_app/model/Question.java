@@ -1,0 +1,39 @@
+package com.vyawpiy.quiz_app.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class Question {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(nullable = false)
+    private String title;
+
+    @Column(name = "right_answer", nullable = false, length = 255)
+    private String rightAnswer;
+
+    @Column(nullable = false, length = 255)
+    private String option1;
+
+    @Column(nullable = false, length = 255)
+    private String option2;
+
+    @Column(length = 255)
+    private String option3;
+
+    @Column(length = 255)
+    private String option4;
+
+    @Column(nullable = false, length = 50)
+    private String category;
+
+    @Column(name = "difficulty_level", nullable = false, length = 20)
+    private String difficultyLevel;
+
+}
