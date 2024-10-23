@@ -15,19 +15,19 @@ public class Question {
     @Column(nullable = false)
     private String title;
 
-    @Column(name = "right_answer", nullable = false, length = 255)
+    @Column(name = "right_answer", nullable = false, length = 315)
     private String rightAnswer;
 
-    @Column(nullable = false, length = 255)
+    @Column(nullable = false, length = 315)
     private String option1;
 
-    @Column(nullable = false, length = 255)
+    @Column(nullable = false, length = 315)
     private String option2;
 
-    @Column(length = 255)
+    @Column(length = 315)
     private String option3;
 
-    @Column(length = 255)
+    @Column(length = 315)
     private String option4;
 
     @Column(nullable = false, length = 50)
